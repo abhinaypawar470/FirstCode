@@ -8,17 +8,19 @@ class fibonaaci{
         int a=input.nextInt();
         int fib0=0;
         int fib1=1;
-        int fib=0;
-
+        int fib;
+        
         for(int i=1;i<=a;i++)
         {
             fib=fib0+fib1;
             if (fib0==a||fib1==a||fib==a)
             {
                 System.out.println(a+" is a Fibonaaci No.!!!");
+                break;
             }
             else
             {
+            	if(i==a)
                 System.out.println(a+" is Not a Fibonaaci No.!!!");
             }
             fib0=fib1;
